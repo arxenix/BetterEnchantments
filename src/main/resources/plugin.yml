@@ -1,0 +1,5 @@
+name: ${project.name}
+main: com.ksanur.betterenchantments.BetterEnchantments
+version: ${version}
+description: Roman Numeral enchantments!
+depend: [ProtocolLib]
