@@ -82,7 +82,7 @@ public class ItemRenamer extends PacketAdapter {
                     ItemMeta im = stack.getItemMeta();
                     List<String> lore = (im.getLore() == null) ? new ArrayList<String>() : im.getLore();
                     String enchantmentName = (enchantmentMap.containsKey(e)) ? enchantmentMap.get(e) : e.getName();
-                    lore.add(0, ChatColor.GRAY + enchantmentName + " " + new RomanNumeral(level).toString() + "hi");
+                    lore.add(0, ChatColor.GRAY + enchantmentName + " " + new RomanNumeral(level).toString());
 
                     NbtCompound compound = (NbtCompound) NbtFactory.fromItemTag(stack);
                     if (compound.containsKey("display")) {
